@@ -1,3 +1,54 @@
 #Ingredients {
     background-image: url(assets\list-bg.png);
 }
+
+body{
+    width: 960px;
+}
+.contentContainer {
+    
+    display: grid;
+    grid-template-columns: repeat(6, 160px); 
+    grid-template-areas: 
+    ". a a a a ."
+    ". b b b b ."
+    ". c c c c ."
+    ". d d d d ."
+    ". e e e e ."
+    ". f f f f ."
+    ". g g g g .";
+}
+
+#logos {
+
+}
+.headerarea {
+    grid-area: a; 
+}
+#articleTitle {
+    grid-area: b;
+}
+#printer {
+    grid-area: b;
+}
+#pizzaPictureContainer {
+
+    grid-area: c;
+
+}
+#pizzaPicture {
+    width: 100%;
+    object-fit: contain;
+}
+#directions {
+    grid-area: d;
+}
+#ingredients {
+    grid-area: e;
+}
+#author {
+    grid-area: f;
+}
+footer {
+    grid-area: g;
+}
